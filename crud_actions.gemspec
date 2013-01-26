@@ -3,16 +3,16 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'crud_actions/version'
 
-DESC = ""
+DESC = "resourceful controller abstraction for rails crud actions"
 
 Gem::Specification.new do |gem|
   gem.name          = "crud_actions"
   gem.version       = CrudActions::VERSION
   gem.authors       = ["zelig"]
   gem.email         = ["viktor.tron@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = DESC
+  gem.summary       = DESC
+  gem.homepage      = "https://github.com/zelig/crud_actions"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
